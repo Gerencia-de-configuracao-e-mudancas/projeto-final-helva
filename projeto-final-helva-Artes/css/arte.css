@@ -1,0 +1,27 @@
+body
+{
+    background-color: #16161a;
+}
+#Artes{
+    margin: auto;
+    background-color: black;
+    display: grid;
+    width: 90%;
+    text-align: center;
+}
+.music > audio
+{
+    background-color: #a7a9be;
+    border: 2px solid #a7a9be;
+    border-radius: 8px;
+}
+footer
+{
+    display: flex;
+    justify-content: space-around;
+}
+footer > ul
+{
+    display: block;
+
+}
