@@ -7,19 +7,30 @@
     <link rel="shortcut icon" href="iconindievillan.webp">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="overview">
     <header>
-        <div class="logo">
-            <img src="assets/LogoHelva.jpg" alt="Logo de Helva">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="pages/arte.html">Arte e Musicas</a></li>
-                <li><a href="pages/mecanicas.html">Mecânicas</a></li>
-                <li><a href="#">Overview</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/indievillan_logo.png" alt="Logo da IndieVillan">
+            </div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="index.html" class="nav-link" data-page="overview">Visão Geral</a></li>
+                <li><a href="pages/mecanicas.html" class="nav-link" data-page="mecanicas">Mecânicas</a></li>
+                <li><a href="pages/arte.html" class="nav-link" data-page="artes">Artes e Músicas</a></li>
             </ul>
-
+        </nav>
+    </header>
+    
     <main>
+        <section>
+            <div class="banner">
+                <img src="assets/LogoHelva.jpg" alt="Logo de Helva">
+            </div>
+        </section>
+        <section id="titulo" >
+            <h1>Visão Geral</h1>
+        </section>
         <section id="enredo">
             <h2>Enredo da História</h2>
             <p>

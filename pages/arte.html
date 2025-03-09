@@ -10,17 +10,28 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="../assets/LogoHelva.jpg" alt="Logo de Helva">
-        </div>
-        <nav>
-            <li><a href="#">Arte e Musicas</a></li>
-            <li><a href="mecanicas.html">Mecânicas</a></li>
-            <li><a href="../index.html">Overview</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/indievillan_logo.png" alt="Logo da IndieVillan">
+            </div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="/index.html" class="nav-link" data-page="overview">Visão Geral</a></li>
+                <li><a href="mecanicas.html" class="nav-link" data-page="mecanicas">Mecânicas</a></li>
+                <li><a href="arte.html" class="nav-link" data-page="artes">Artes e Músicas</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
+        <section>
+            <div class="banner">
+                <img src="/assets/LogoHelva.jpg" alt="Logo de Helva">
+            </div>
+        </section>
+        <section id="titulo" >
+            <h1>Artes e Músicas</h1>
+        </section>
         <section id = "Artes">
             <h1>Estilo de arte:</h1>
             <p>
@@ -61,7 +72,7 @@
             
             <div id = "florest" class="music">
                 <h2>Musica da borda da floresta:</h2>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="../sons/florestaBorda1.mp3" type="audio/mp3">
                 </audio>
                 <p>a borda da floresta eh um local perverso ,cheio de criaturas estranhas,algumas delas ainda com traumas da guerra santa</p>
@@ -70,7 +81,7 @@
             
             <div id = "alta" class="music">
                 <h2>Musica da alta lorranjhia:</h2>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="../sons/altaLorranjhia.mp3" type="audio/mp3">
                 </audio>
                 <p>musica classica,vinho e queijos caros,isso eh oque sai desse som,totalmente ligado a alta sociedade de lorranjhia</p>
@@ -79,7 +90,7 @@
             
             <div id = "boss" class="music">
                 <h2>Musica da batalha com o mini-boss:</h2>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="../sons/miniBossV4.3.mp3" type ="audio/mp3">
                 </audio>
                 <p>esse som tenta tornar a batalha com o primeiro mini-boss do prototipo algo frenético</p>
@@ -88,7 +99,7 @@
             
             <div id = "baixa" class="music">
                 <h2>Musica da baixa lorranjhia:</h2>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="../sons/baixaLorranjhia1.mp3" type = "audio/mp3">
                 </audio>
                 <p>puro simbolismo do estado mizeravel que uma especie consegue chegar, nesse exemplo, sao os humanos de baixa lorranjhia </p>
@@ -97,7 +108,7 @@
             
             <div id = "tesao" class="music">
                 <h2>Musica de cenarios de tensão:</h2>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="../sons/testeNovamente.mp3" type = "audio/mp3">
                 </audio>
                 <p>essa musica esta sendo usada atualmente nos cenarios que acontecem a mudança de dimensão</p>
