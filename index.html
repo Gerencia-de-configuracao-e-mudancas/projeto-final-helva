@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helva - Visão Geral</title>
     <link rel="shortcut icon" href="../projeto-final-helva/iconindievillan.webp">
-    <link rel="stylesheet" href="../projeto-final-helva/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body data-page="overview">
     <header>
-        <nav>
-            <ul class="nav-menu">
-                <div class="nav-logo">
-                    <img src="assets/indievillan_logo.png" alt="Logo da IndieVillan">
-                </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/indievillan_logo.png" alt="Logo da IndieVillan">
+            </div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
                 <li><a href="index.html" class="nav-link" data-page="overview">Visão Geral</a></li>
                 <li><a href="mecanicas.html" class="nav-link" data-page="mecanicas">Mecânicas</a></li>
                 <li><a href="artes.html" class="nav-link" data-page="artes">Artes e Músicas</a></li>
