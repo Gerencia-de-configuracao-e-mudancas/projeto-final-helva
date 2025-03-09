@@ -84,7 +84,7 @@ a:hover {
 }
 
 header {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -100,11 +100,8 @@ header .logo img {
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
+    justify-content: space-around;
+}   
 
 nav ul li a {
     color: var(--paragraph);
@@ -114,5 +111,12 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--link);
 }
-
-
+footer
+{
+    display: flex;
+    justify-content: space-around;
+}
+footer > ul
+{
+    display: block;
+}
