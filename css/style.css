@@ -61,7 +61,7 @@ a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: auto; /* Permite que a altura do card se ajuste automaticamente */
+    height: auto;
 }
 
 .card-txt {
@@ -73,13 +73,13 @@ a:hover {
     justify-content: center;
     grid-column: span 2;
     align-items: center;
-    height: auto; /* Deixa o tamanho da imagem fluir com o card */
+    height: auto;
 }
 
 .card-img img {
     max-width: 100%;
     height: auto;
-    object-fit: contain; /* Garante que a imagem não seja cortada, mas caiba no card */
+    object-fit: contain;
 }
 
 .card h2 {
@@ -221,8 +221,6 @@ a:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* Banner */
 .banner {
     width: 100%;
@@ -239,21 +237,6 @@ a:hover {
     height: 100%;
     object-fit: cover;
 }
-
-/* Artes e Musicas */
-/* #Artes{
-    margin: auto;
-    background-color: black;
-    display: grid;
-    width: 90%;
-    text-align: center;
-    }
-    .music > audio
-    {
-        background-color: #a7a9be;
-        border: 2px solid #a7a9be;
-        border-radius: 8px;
-        } */
         
 /* Rodapé */
 .creditos h1 {
