@@ -3,149 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../logoindievillan.webp" type="image/png">
+    <link rel="shortcut icon" href="../assets/indievillan_logo.png" type="image/png">
     <title>Helva - Arts</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/arte.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="../assets/LogoHelva.jpg" alt="Logo de Helva">
-        </div>
-        <nav>
-            <li><a href="#">Arte e Musicas</a></li>
-            <li><a href="mecanicas.html">Mecânicas</a></li>
-            <li><a href="../index.html">Overview</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/indievillan_logo.png" alt="Logo da IndieVillan">
+            </div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="../index.html" class="nav-link" data-page="overview">Visão Geral</a></li>
+                <li><a href="mecanicas.html" class="nav-link" data-page="mecanicas">Mecânicas</a></li>
+                <li><a href="arte.html" class="nav-link" data-page="artes">Artes e Músicas</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id = "Artes">
-            <h1>Estilo de arte:</h1>
-            <p>
-                 O estilo de arte utilizado no jogo eh o estilo de pixel art(desenho formado por pixels coloridos)
-            </p>
-             <div>
-                 <h2>Personagens:</h2>
-                  <img src="../imagens/Personagens/Humana/humana-front.png" alt="">
-                  <img src="../imagens/Personagens/Humana/humana-front-attack-sword.png" alt="">
-                  <img src="../imagens/Personagens/Humana/humana-damage.png" alt="">
-                  <img src="../imagens/Personagens/Humana/humana-back-attack-sword.png" alt="">
-                  <img src="../imagens/Personagens/Humana/humana-back.png" alt="">
-                  <img src="../imagens/Personagens/Humana/humana-left.png" alt="">
-             </div>
-            <div>
-                <h2>Bosses:</h2>
-                 <img src="../imagens/Mini_boss/holanda-miniboss1.png" alt="">
-            </div>
-            <div>
-                <h2>Estruturas:</h2>
-                <img src="../imagens/Elemetentos_mapa/casa-madeira.png" alt="">
-                <img src="../imagens/Elemetentos_mapa/casa-madeira-3.png" alt="">
-                <img src="../imagens/Elemetentos_mapa/fogueira.png" alt="" style="height: 140px; top: -48px; position:relative;">
-                <img src="../imagens/Elemetentos_mapa/arvore_B.png" alt="" style="height: 140px; top: -48px; position:relative;">
-                <img src="../imagens/Elemetentos_mapa/arvore_C.png" alt="" style="height: 140px; top: -48px; position:relative;">
-                
-            </div>
-            <div>
-                <h2>Inimigos:</h2>
-                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-attack-frente.png" alt="" style = "height: 140px;">
-                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-damage-frente.png" alt="" style = "height: 140px;">
-                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-walk-frente.png" alt="" style = "height: 140px;">
-                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-defeated.png" alt="" style = "height: 140px;">
+        <section>
+            <div class="banner">
+                <img src="../assets/LogoHelva.jpg" alt="Logo de Helva">
             </div>
         </section>
-        <section id ="Musicas">
-            <h1>Musicas:</h1>
+        <section class="titulo" >
+            <h1>Artes e Músicas</h1>
+        </section>
+        <section class="cards-container">
+            <div class="card card-txt">
+                <h1>Estilo de arte:</h1>
+                <p>
+                     O estilo de arte utilizado no jogo é o estilo de pixel art (desenho formado por pixels coloridos)
+                </p>
+            </div>
+            <div class="card card-txt">
+                 <h2>Personagens:</h2>
+            </div>
+            <div class="card card-img">
+                  <img src="../imagens/Personagens/Humana/humana-front.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Personagens/Humana/humana-front-attack-sword.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Personagens/Humana/humana-damage.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Personagens/Humana/humana-back-attack-sword.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Personagens/Humana/humana-back.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Personagens/Humana/humana-left.png" alt="">
+            </div>
+            <div class="card card-txt">
+                <h2>Bosses:</h2>
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Mini_boss/holanda-miniboss1.png" alt="">
+            </div>
+
+            <div class="card card-txt">
+                <h2>Estruturas:</h2>
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Elemetentos_mapa/casa-madeira.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Elemetentos_mapa/casa-madeira-3.png" alt="">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Elemetentos_mapa/fogueira.png" alt="" style="height: 140px; top: -48px">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Elemetentos_mapa/arvore_B.png" alt="" style="height: 140px; top: -48px">
+            </div>
+            <div class="card card-img">
+                <img src="../imagens/Elemetentos_mapa/arvore_C.png" alt="" style="height: 140px; top: -48px">
+            </div>
+                
+            <div class="card card-txt">
+                <h2>Inimigos:</h2>
+            </div>
+            <div class="card card-img">
+                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-attack-frente.png" alt="" style = "height: 140px;">
+            </div>
+            <div class="card card-img">
+                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-damage-frente.png" alt="" style = "height: 140px;">
+            </div>
+            <div class="card card-img">
+                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-walk-frente.png" alt="" style = "height: 140px;">
+            </div>
+            <div class="card card-img">
+                <img src="..//imagens/inimigos/cabeca_de_toco/cabeca-de-toco-defeated.png" alt="" style = "height: 140px;">
+            </div>
+
+        </section>
+        <section class="cards-container">
+            <div class="card card-txt">
+                <h1>Músicas:</h1>
+            </div>
             
-            <div id = "florest" class="music">
-                <h2>Musica da borda da floresta:</h2>
-                <audio controls autoplay>
+            <div class="card card-txt">
+                <h2>Música da Borda da Floresta:</h2>
+                <audio controls>
                     <source src="../sons/florestaBorda1.mp3" type="audio/mp3">
                 </audio>
-                <p>a borda da floresta eh um local perverso ,cheio de criaturas estranhas,algumas delas ainda com traumas da guerra santa</p>
+                <p>
+                    a borda da floresta é um lugar inquietante, repleto de criaturas misteriosas, muitas das quais carregam as 
+                    cicatrizes de uma guerra antiga e brutal. A atmosfera densa e sombria reflete o trauma e os horrores que 
+                    ainda assombram este espaço selvagem.
+                </p>
             </div>
             
-            
-            <div id = "alta" class="music">
-                <h2>Musica da alta lorranjhia:</h2>
-                <audio controls autoplay>
+            <div class="card card-txt">
+                <h2>Música da Alta Lorranjhia:</h2>
+                <audio controls>
                     <source src="../sons/altaLorranjhia.mp3" type="audio/mp3">
                 </audio>
-                <p>musica classica,vinho e queijos caros,isso eh oque sai desse som,totalmente ligado a alta sociedade de lorranjhia</p>
+                <p>
+                    Com uma sonoridade clássica, acompanhada do som de taças de vinho e o suave murmúrio de conversas entre 
+                    os nobres, esta música reflete a opulência e a sofisticação da alta sociedade de Lorranjhia. Um ambiente 
+                    onde o luxo é palpável, e a política é um jogo entre poderosos.
+                </p>
             </div>
             
-            
-            <div id = "boss" class="music">
-                <h2>Musica da batalha com o mini-boss:</h2>
-                <audio controls autoplay>
-                    <source src="../sons/miniBossV4.3.mp3" type ="audio/mp3">
+            <div class="card card-txt">
+                <h2>Música da Batalha com o Mini-Boss:</h2>
+                <audio controls>
+                    <source src="../sons/miniBossV4.3.mp3" type="audio/mp3">
                 </audio>
-                <p>esse som tenta tornar a batalha com o primeiro mini-boss do prototipo algo frenético</p>
+                <p>Esta composição intensifica a adrenalina da batalha contra o primeiro mini-boss do protótipo, com uma 
+                    melodia frenética que acompanha cada golpe e esquiva, ampliando a tensão e o ritmo acelerado da luta.
+                </p>
             </div>
-
             
-            <div id = "baixa" class="music">
-                <h2>Musica da baixa lorranjhia:</h2>
-                <audio controls autoplay>
-                    <source src="../sons/baixaLorranjhia1.mp3" type = "audio/mp3">
+            <div class="card card-txt">
+                <h2>Música da Baixa Lorranjhia:</h2>
+                <audio controls>
+                    <source src="../sons/baixaLorranjhia1.mp3" type="audio/mp3">
                 </audio>
-                <p>puro simbolismo do estado mizeravel que uma especie consegue chegar, nesse exemplo, sao os humanos de baixa lorranjhia </p>
+                <p>
+                    Com uma tonalidade sombria e desesperançada, essa música simboliza o estado deplorável em que os 
+                    habitantes da Baixa Lorranjhia se encontram. Uma reflexão sonora da miséria humana, da luta pela 
+                    sobrevivência e da opressão que assola a camada mais pobre da sociedade.
+                </p>
             </div>
-
             
-            <div id = "tesao" class="music">
-                <h2>Musica de cenarios de tensão:</h2>
-                <audio controls autoplay>
-                    <source src="../sons/testeNovamente.mp3" type = "audio/mp3">
+            <div class="card card-txt">
+                <h2>Música de Cenários de Tensão:</h2>
+                <audio controls>
+                    <source src="../sons/testeNovamente.mp3" type="audio/mp3">
                 </audio>
-                <p>essa musica esta sendo usada atualmente nos cenarios que acontecem a mudança de dimensão</p>
+                <p>
+                    Esta melodia é utilizada nos momentos de transição entre dimensões, onde a realidade parece se 
+                    distorcer e a tensão se acumula. Ela cria uma sensação de incerteza e desconforto, preparando o 
+                    jogador para o inesperado e o surreal que está por vir.
+                </p>
             </div>
+            
         
         </section>
         </main>
+
         <footer>
+            <section class="creditos" >
+                <h1>Redes Sociais</h1>
+            </section>
+            <section class="links-sociais">
+                <div class="social" id="instagram">
+                    <a href="https://www.instagram.com/indievillan" target="_blank">
+                        <img src="../assets/instagram_logo.png" alt="Instagram da Empresa">
+                    </a>
+                </div>
+                <div class="social" id="youtube">
+                    <a href="https://www.youtube.com/@IndieVillan" target="_blank">
+                        <img src="../assets/youtube_logo.png" alt="Youtube da Empresa">
+                    </a>
+                </div>
+            </section>
 
-            <h2>Fundadores:</h2>
-            
-            <ul>
-                
-                <li>
-                    <a href="https://www.instagram.com/matteus_danta" target="_blank">@Mateus Dantas</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rafael.__init__" target="_blank">@Rafael Ferreira</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/nayronvini" target="_blank">@Vinicius Nayron</a>
-                </li>
-                <li>
-                    <a href="https://www,instagram.com/pedro_holanda_1" target="_blank">@Pedro Holanda</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/_andersonlorran" target="_blank">@Anderson Lorran</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/erlyson_pamplona" target="_blank">@Erlyson Pamplona</a>
-                </li>
-            </ul>
-
-            <a href="https://www.instagram.com/indievillan" target="_blank"><img src="../iconindievillan.webp" alt="indievillan"></a>
-            
-            <h2> Colaboradores:</h2>
-            <ul>
-                
-                    <li>
-                        <a href="httpd://www.instagram.com/marcospag81">@Marcos Paulo</a>
-                    </li>
-
-                    <li>
-                        <a href="httpd://www.instagram.com/gusstavo.lopes">@Gustavo lopes</a>
-                    </li>
-                
-                </ul>
-        
+            <section>
+                <div class="banner">
+                    <img src="../assets/indievillan_banner.png" alt="Banner da Empresa">
+                </div>
+            </section>
         </footer>
+        <script src="../js/script.js"></script>
 </body>
 </html>
